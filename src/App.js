@@ -72,8 +72,8 @@ function App() {
         ) : (
           <>
             <div className='pokemonCardContainer'>
-              {pokemonData.map((pokemon, i) => {
-                return <Card kye={i} pokemon={pokemon}/ >;
+              {pokemonData.map((pokemon) => {
+                return <Card key={pokemon.name} pokemon={pokemon} />;
               })}
             </div>
             <div className='btn'>
